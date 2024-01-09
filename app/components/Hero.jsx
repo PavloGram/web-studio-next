@@ -61,7 +61,6 @@ function Hero() {
 
             <p className={styles.heroSectionModalFormLabel}>Коментар</p>
             <textarea
-              type="email"
               rows={5}
               placeholder="Введіть текст"
               className={styles.heroSectionModalFormInput}

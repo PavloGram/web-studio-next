@@ -83,23 +83,22 @@ export default function Header() {
 
       <section className={styles.headerSectionLogoAndNavSectionContactsSection}>
         <h2 className="visually-hidden">Контакти </h2>
-        <article><h3 className="visually-hidden">Телефон </h3>
-        
+        {/* <article>
+          <h3 className="visually-hidden">Телефон </h3>
+
           <Link
             href="tel:+380961111111"
             className={styles.headerSectionLogoAndNavSectionContactsSectionLink}
           >
-            
             <PhoneIcon /> +38 096 111 11 11
           </Link>
-        </article>
+        </article> */}
         <article>
           <h3 className="visually-hidden">Email </h3>
           <Link
             href="mailto:info@devstudio.com"
             className={styles.headerSectionLogoAndNavSectionContactsSectionLink}
           >
-            
             <MailIcon /> info@devstudio.com
           </Link>
         </article>
@@ -108,7 +107,8 @@ export default function Header() {
         className={`${styles.headerSectionMobMenuSection} translate-x-[-50%] 
          ${showMobMenu ? "translate-y-[0]" : "translate-y-[-100%]"} 
          `}
-      ><h2 className="visually-hidden">Мобільне меню</h2>
+      >
+        <h2 className="visually-hidden">Мобільне меню</h2>
         <button
           className={styles.headerSectionMobMenuSectioncloseBtn}
           onClick={() => setShowMobMenu(false)}
@@ -158,12 +158,11 @@ export default function Header() {
           <section className={styles.headerSectionMobMenuSectionContactSection}>
             <h4 className="visually-hidden">Контакти </h4>
             <article>
-            <h5 className="visually-hidden">Телефон </h5>
+              <h5 className="visually-hidden">Телефон </h5>
               <Link
                 href="tel:+380961111111"
                 className={styles.headerSectionMobMenuSectionContactSectionTel}
               >
-               
                 +38 096 111 11 11
               </Link>
             </article>
@@ -173,7 +172,6 @@ export default function Header() {
                 href="mailto:info@devstudio.com"
                 className={styles.headerSectionMobMenuSectionContactSectionMail}
               >
-                
                 info@devstudio.com
               </Link>
             </article>
