@@ -13,11 +13,12 @@
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    max-width: auto;
+    width: 768px;
     padding: 21px 10px;
   }
   @media screen and (min-width: 1280px) {
-    max-width: 1200px;
+    width: 1200px;
     padding: 24px 10px;
   }
 }
