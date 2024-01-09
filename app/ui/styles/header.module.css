@@ -1,6 +1,6 @@
 .headerSection {
-  width: 100%;
-  max-width: 480px;
+  /* width: 100%;
+  max-width: 480px; */
   margin: 0 auto;
   padding: 15px 10px;
   margin: 0 auto;
@@ -8,13 +8,13 @@
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
-    width: 100%;
-    max-width: 768px;
+    /* width: 100%;
+    max-width: 768px; */
     padding: 21px 10px;
   }
   @media screen and (min-width: 1280px) {
-    width: 100%;
-    max-width: 1200px;
+    /* width: 100%;
+    max-width: 1200px; */
     padding: 24px 10px;
   }
 }

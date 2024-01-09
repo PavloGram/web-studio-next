@@ -14,7 +14,7 @@ export default function Header() {
   const path = usePathname();
 
   return (
-    <header className={styles.headerSection}>
+    <header className={`${styles.headerSection} w-full max-w-[480px] md:max-w-[768px] xl:max-w-[1200px]`}>
       <section className={styles.headerSectionLogoAndNavSection}>
         <h2>
           <Link
