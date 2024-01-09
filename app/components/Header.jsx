@@ -10,13 +10,12 @@ import MailIcon from "../ui/MailIcon";
 import styles from "../ui/styles/header.module.css";
 
 export default function Header() {
-  const [showMobMenu, setShowMobMenu] = useState(false);
+  const [showMobMenu, setShowMobMenu] = useState(true);
   const path = usePathname();
 
   return (
     <header className={styles.headerSection}>
-    
-          <section className={styles.headerSectionLogoAndNavSection}>
+      <section className={styles.headerSectionLogoAndNavSection}>
         <h2>
           <Link
             href="/"
@@ -104,9 +103,14 @@ export default function Header() {
           </Link>
         </article>
       </section>
+
       <section
-        className={`${styles.headerSectionMobMenuSection} translate-x-[-50%] 
-         ${showMobMenu ? "translate-y-[0]" : "translate-y-[-100%]"} 
+        className={`${styles.headerSectionMobMenuSection}  
+         ${
+           showMobMenu
+             ? "opacity-100 pointer-events-auto"
+             : "opacity-0 pointer-events-none"
+         } 
          `}
       >
         <h2 className="visually-hidden">Мобільне меню</h2>
@@ -215,9 +219,7 @@ export default function Header() {
             </article>
           </section>
         </section>
-      </section> 
-   
-   
+      </section>
     </header>
   );
 }

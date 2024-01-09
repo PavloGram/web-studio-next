@@ -1,5 +1,5 @@
 .headerSection {
-  /* width: 100%; */
+  position: relative;
   max-width: 480px;
   margin: 0 auto;
   padding: 15px 10px;
@@ -148,13 +148,14 @@
   fill: #2196f3;
 }
 
+
 .headerSectionMobMenuSection {
   /*     translate-x-[-50%] transition-transform duration-300 px-10 py-12 flex flex-col justify-between */
   position: fixed;
   top: 0;
-  left: 50%;
-  width: 100%;
-  max-width: 481px;
+  left: 105px;
+ 
+  width: 481px;
   height: 100%;
   background: #ffffff;
   padding: 48px 40px;
@@ -162,7 +163,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  transition-property: transform;
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   z-index: 10;
