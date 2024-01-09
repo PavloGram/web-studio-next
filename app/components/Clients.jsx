@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import ClientIcon1 from "../ui/clientIcon1";
-import ClientIcon2 from "../ui/clientIcon2";
-import ClientIcon3 from "../ui/clientIcon3";
+import ClientIcon1 from "../ui/ClientIcon1";
+import ClientIcon2 from "../ui/ClientIcon2";
+import ClientIcon3 from "../ui/ClientIcon3";
 import styles from "../ui/styles/clients.module.css";
 
 function Clients() {
