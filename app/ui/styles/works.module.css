@@ -1,0 +1,49 @@
+.worksSection {
+  margin-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+.worksSectionTitle {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.worksSectionCardWrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 30px;
+}
+.worksSectionCard {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  z-index: -10;
+}
+
+.worksSectionCardText {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  padding: 27px 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}

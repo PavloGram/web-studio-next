@@ -6,9 +6,7 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens:{
-     sm: '480px',
-      },
+   
     colors:{
       mainTextColor: '#212121',
       primaryTextColor: '#757575',
@@ -34,7 +32,11 @@ module.exports = {
       },
       backgroundColor:{
        'main-bg-color': '#f5f4fa',
-        'hero-bg': "rgba(47, 48, 58, 0.40)"
+        'hero-bg': "rgba(47, 48, 58, 0.40)",
+        'white-bg': "#ffffff",
+        'primary-button-bg': "#F5F4FA",
+        'portfolio-card-bg': "rgba(33, 150, 243, 0.90)",
+        'works-card-bg': "rgba(47, 48, 58, 0.80)",
       }
     },
   },

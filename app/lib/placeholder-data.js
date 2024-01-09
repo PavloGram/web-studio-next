@@ -2,10 +2,6 @@ import antenna from "../../public/svg/antenna.svg?url";
 import clock from "../../public/svg/clock.svg?url";
 import diagram from "../../public/svg/diagram.svg?url";
 import astronaut from "../../public/svg/astronaut.svg?url";
-import instagramIcon from "../../public/svg/instagram.svg?url";
-import twitterIcon from "../../public/svg/twitter.svg?url";
-import facebookIcon from "../../public/svg/facebook.svg?url";
-import linkedinIcon from "../../public/svg/linkedin.svg?url";
 import teamIgorMob from "../../public/team-photo/igor-mobile.jpg";
 import teamIgorTab from "../../public/team-photo/igor-tablet.jpg";
 import teamIgorDesk from "../../public/team-photo/igor-desktop.jpg";
@@ -18,6 +14,9 @@ import teamMukolaDesk from "../../public/team-photo/mukola-desktop.jpg";
 import teamMuhailoMob from "../../public/team-photo/muhail-mobile.jpg";
 import teamMuhailoTab from "../../public/team-photo/muhail-tablet.jpg";
 import teamMuhailoDesk from "../../public/team-photo/muhail-desktop.jpg";
+import workApp1 from "../../public/work/box-1-desktop.jpg";
+import workMobApp from "../../public/work/box-2-desktop.jpg";
+import workDesign from "../../public/work/box-3-desktop.jpg";
 const projects = [
   {
     type: "",
@@ -120,10 +119,18 @@ const benefits = [
   },
 ];
 
-const works = [
-  { description: "", img: "" },
-  { description: "", img: "" },
-  { description: "", img: "" },
+const myWorks = [
+  {
+    id: 1,
+    description: "Десктопні додатки",
+    img: workApp1,
+  },
+  {
+    id: 2,
+    description: "Мобільні додатки",
+    img: workMobApp,
+  },
+  { id: 3, description: "Дизайнерські рішення", img: workDesign },
 ];
 
 const team = [
@@ -134,12 +141,13 @@ const team = [
     mobPhoto: teamIgorMob,
     tabPhoto: teamIgorTab,
     descPhoto: teamIgorDesk,
-    socialNetworks: [
-      { icon: instagramIcon, link: "/", name: "instagram" },
-      { icon: twitterIcon, link: "/", name: "twitter" },
-      { icon: facebookIcon, link: "/", name: "facebook" },
-      { icon: linkedinIcon, link: "/", name: "linkedin" },
-    ],
+    alt: "молодий чоловік в сорочці і окулярах" ,
+    socialNetworks: {
+      instagram: { link: "/", name: "instagram" },
+      twitter: { link: "/", name: "twitter" },
+      facebook: { link: "/", name: "facebook" },
+      linkedin: { link: "/", name: "linkedin" },
+    },
   },
   {
     id: 2,
@@ -148,12 +156,13 @@ const team = [
     mobPhoto: teamOlgaMob,
     tabPhoto: teamOlgaTab,
     descPhoto: teamOlgaDesk,
-    socialNetworks: [
-      { icon: instagramIcon, link: "/", name: "instagram" },
-      { icon: twitterIcon, link: "/", name: "twitter" },
-      { icon: facebookIcon, link: "/", name: "facebook" },
-      { icon: linkedinIcon, link: "/", name: "linkedin" },
-    ],
+    alt: "молода дівчина в окулярах",
+    socialNetworks: {
+      instagram: { link: "/", name: "instagram" },
+      twitter: { link: "/", name: "twitter" },
+      facebook: { link: "/", name: "facebook" },
+      linkedin: { link: "/", name: "linkedin" },
+    },
   },
   {
     id: 3,
@@ -162,12 +171,13 @@ const team = [
     mobPhoto: teamMukolaMob,
     tabPhoto: teamMukolaTab,
     descPhoto: teamMukolaDesk,
-    socialNetworks: [
-      { icon: instagramIcon, link: "/", name: "instagram" },
-      { icon: twitterIcon, link: "/", name: "twitter" },
-      { icon: facebookIcon, link: "/", name: "facebook" },
-      { icon: linkedinIcon, link: "/", name: "linkedin" },
-    ],
+    alt: "молодий усміхнений чоловік в сорочці",
+    socialNetworks: {
+      instagram: { link: "/", name: "instagram" },
+      twitter: { link: "/", name: "twitter" },
+      facebook: { link: "/", name: "facebook" },
+      linkedin: { link: "/", name: "linkedin" },
+    },
   },
   {
     id: 4,
@@ -176,40 +186,14 @@ const team = [
     mobPhoto: teamMuhailoMob,
     tabPhoto: teamMuhailoTab,
     descPhoto: teamMuhailoDesk,
-    socialNetworks: [
-      { icon: instagramIcon, link: "/", name: "instagram" },
-      { icon: twitterIcon, link: "/", name: "twitter" },
-      { icon: facebookIcon, link: "/", name: "facebook" },
-      { icon: linkedinIcon, link: "/", name: "linkedin" },
-    ],
+    alt: "молодий чоловік в футболці і окулярах",
+    socialNetworks: {
+      instagram: { link: "/", name: "instagram" },
+      twitter: { link: "/", name: "twitter" },
+      facebook: { link: "/", name: "facebook" },
+      linkedin: { link: "/", name: "linkedin" },
+    },
   },
 ];
 
-const clients = [
-  {
-    link: "/",
-    icon: "",
-  },
-  {
-    link: "/",
-    icon: "",
-  },
-  {
-    link: "/",
-    icon: "",
-  },
-  {
-    link: "/",
-    icon: "",
-  },
-  {
-    link: "/",
-    icon: "",
-  },
-  {
-    link: "/",
-    icon: "",
-  },
-];
-
-export { benefits, team };
+export { benefits, team, myWorks };

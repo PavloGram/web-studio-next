@@ -1,0 +1,247 @@
+.headerSection {
+  width: 100%;
+  max-width: 480px;
+  padding: 15px 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 21px 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1200px;
+    padding: 24px 10px;
+  }
+}
+
+.headerSectionLogoAndNavSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 480px;
+
+  @media screen and (min-width: 768px) {
+    max-width: auto;
+    gap: 88px;
+    justify-content: start;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 93px;
+  }
+}
+
+.headerSectionLogoAndNavSectionLogo {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  @media screen and (min-width: 1280px) {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
+}
+
+.headerSectionLogoAndNavSectionNav {
+  /* hidden md:flex gap-x-[50px] text-[14px] font-medium */
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+}
+.headerSectionLogoAndNavSectionNavLink {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.headerSectionLogoAndNavSectionNavLink:hover {
+  color: #2196f3;
+}
+.headerSectionLogoAndNavSectionNavHomeLink {
+  position: relative;
+  color: #2196f3;
+}
+.headerSectionLogoAndNavSectionNavHomeLinkAfter {
+  position: absolute;
+  bottom: -31px;
+  left: -1.5px;
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  @media screen and (min-width: 1280px) {
+    bottom: -30px;
+  }
+}
+
+.headerSectionLogoAndNavSectionNavPortfolioLink {
+  position: relative;
+  color: #2196f3;
+}
+
+.headerSectionLogoAndNavSectionNavPortfolioLinkAfter {
+  position: absolute;
+  bottom: -31px;
+  left: -2px;
+  content: "";
+  display: block;
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  @media screen and (min-width: 1280px) {
+    bottom: -30px;
+  }
+}
+
+.headerSectionLogoAndNavSectionContactsSection {
+  /* hidden md:flex flex-col gap-y-[10px] text-[12px] xl:text-[14px] text-[#757575] xl:flex-row gap-x-[30px]  */
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.headerSectionLogoAndNavSectionContactsSectionLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #757575;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
+}
+
+.headerSectionLogoAndNavSectionContactsSectionLink:hover {
+  color: #2196f3;
+}
+.headerSectionLogoAndNavSectionContactsSectionLink:hover > svg {
+  fill: #2196f3;
+}
+
+.headerSectionMobMenuSection {
+  /*     translate-x-[-50%] transition-transform duration-300 px-10 py-12 flex flex-col justify-between */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 481px;
+  height: 100%;
+  background: #ffffff;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  z-index: 10;
+}
+
+.headerSectionMobMenuSectioncloseBtn{
+
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.headerSectionMobMenuSectionNavSection{
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.headerSectionMobMenuSectionNavSectionLink{
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+.headerSectionMobMenuSectionContactSection{
+  /* flex flex-col gap-8 mb-16 */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.headerSectionMobMenuSectionContactSectionTel{
+  color: #2196F3;
+font-size: 34px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.68px;
+}
+
+.headerSectionMobMenuSectionContactSectionMail{
+  color: #757575;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+}
+.headerSectionMobMenuSectionSocialLinkSection{
+  display: flex;
+}
+.headerSectionMobMenuSectionSocialLinkSectionFirstLink{
+  color: #2196F3;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 122.222% */
+letter-spacing: 0.36px;
+padding-right:  10px;
+border-right: 1px solid;
+border-color: rgba(33, 33, 33, 0.2);
+}
+.headerSectionMobMenuSectionSocialLinkSectionLink{
+  color: #2196F3;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 122.222% */
+letter-spacing: 0.36px;
+padding: 0 10px;
+border-right: 1px solid;
+border-color: rgba(33, 33, 33, 0.2);
+}
+.headerSectionMobMenuSectionSocialLinkSectionLastLink{
+  color: #2196F3;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 122.222% */
+letter-spacing: 0.36px;
+padding-left: 10px;
+
+}

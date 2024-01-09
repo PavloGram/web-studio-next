@@ -1,6 +1,6 @@
 import "./globals.css";
-import Footer from "./ui/Footer";
-import Header from "./ui/Header";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import { roboto } from "./ui/fonts";
 
 export const metadata = {
@@ -10,8 +10,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="uk">
       <body className={`${roboto.className} antialiased text-mainTextColor`}>
+      <h1 className="visually-hidden">Веб студія</h1>
         <Header />
         {children}
         <Footer />
