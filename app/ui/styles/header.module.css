@@ -1,6 +1,7 @@
 .headerSection {
   width: 100%;
   max-width: 480px;
+  margin: 0 auto;
   padding: 15px 10px;
   margin: 0 auto;
   display: flex;

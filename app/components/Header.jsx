@@ -83,7 +83,7 @@ export default function Header() {
 
       <section className={styles.headerSectionLogoAndNavSectionContactsSection}>
         <h2 className="visually-hidden">Контакти </h2>
-        {/* <article>
+        <article>
           <h3 className="visually-hidden">Телефон </h3>
 
           <Link
@@ -92,7 +92,7 @@ export default function Header() {
           >
             <PhoneIcon /> +38 096 111 11 11
           </Link>
-        </article> */}
+        </article>
         <article>
           <h3 className="visually-hidden">Email </h3>
           <Link

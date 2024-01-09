@@ -17,7 +17,7 @@ function TwitterIcon({fill}) {
         />
       </g>
       <defs>
-        <clipPath id="clip0_3_7797">
+        <clipPath >
           <rect width="20" height="20" />
         </clipPath>
       </defs>

@@ -16,7 +16,7 @@ function LinkedinIcon({fill}) {
         <path d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z" />
       </g>
       <defs>
-        <clipPath id="clip0_3_7815">
+        <clipPath >
           <rect width="20" height="20" fill="white" />
         </clipPath>
       </defs>
