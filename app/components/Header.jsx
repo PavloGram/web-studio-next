@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className={styles.headerSection}>
-      <div className={styles.headerSectionWrap}>
+    
           <section className={styles.headerSectionLogoAndNavSection}>
         <h2>
           <Link
@@ -216,7 +216,7 @@ export default function Header() {
           </section>
         </section>
       </section> 
-      </div>
+   
    
     </header>
   );

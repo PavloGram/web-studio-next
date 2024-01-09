@@ -1,10 +1,5 @@
 .headerSection {
-  width: 100%;
-
-}
-
-.headerSectionWrap{
-  width: 100%;
+  /* width: 100%; */
   max-width: 480px;
   margin: 0 auto;
   padding: 15px 10px;
@@ -13,7 +8,6 @@
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
-   
     max-width: 768px;
     padding: 21px 10px;
   }
@@ -22,6 +16,7 @@
     padding: 24px 10px;
   }
 }
+
 
 .headerSectionLogoAndNavSection {
   display: flex;
