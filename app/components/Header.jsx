@@ -10,7 +10,7 @@ import MailIcon from "../ui/MailIcon";
 import styles from "../ui/styles/header.module.css";
 
 export default function Header() {
-  const [showMobMenu, setShowMobMenu] = useState(true);
+  const [showMobMenu, setShowMobMenu] = useState(false);
   const path = usePathname();
 
   return (
@@ -103,8 +103,8 @@ export default function Header() {
           </Link>
         </article>
       </section>
-
-      <section
+<div className={styles.headerSectionMobMenuSectionWrap}>
+  <section
         className={`${styles.headerSectionMobMenuSection}  
          ${
            showMobMenu
@@ -220,6 +220,8 @@ export default function Header() {
           </section>
         </section>
       </section>
+</div>
+      
     </header>
   );
 }
