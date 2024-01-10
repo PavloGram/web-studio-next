@@ -12,10 +12,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="uk">
       <body className={`${roboto.className} antialiased text-mainTextColor`}>
-      <h1 className="visually-hidden">Веб студія</h1>
-        <Header />
-        {children}
-        <Footer />
+        <div className="wrapper">
+          <h1 className="visually-hidden">Веб студія</h1>
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

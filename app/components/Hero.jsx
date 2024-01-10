@@ -26,15 +26,15 @@ function Hero() {
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         }  `}
-      ><h3 className="visually-hidden">Форма зворотнього зв’язку</h3>
+      ><h4 className="visually-hidden">Форма зворотнього зв’язку</h4>
         <div
           onClick={(e) => e.stopPropagation()}
           className={styles.heroSectionModal}
         >
         
-          <h4 className={styles.heroSectionModalTitle}>
+          <h5 className={styles.heroSectionModalTitle}>
             Залиште свої дані, ми вам передзвонимо
-          </h4>  <button
+          </h5>  <button
             className={styles.heroSectionModalCloseBtn}
             onClick={() => setIsOpenModal(false)}
           >
