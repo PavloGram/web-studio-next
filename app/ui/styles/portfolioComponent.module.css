@@ -1,0 +1,159 @@
+.filterBtnSection {
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .filterBtnSectionBtnWrap {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.48px;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      justify-content: center;
+    }
+  }
+  .filterBtnSectionBtn {
+    border-radius: 4px;
+    transition-property: color, background-color,  box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+  
+  .filterBtnSectionBtn:hover {
+    color: #ffffff;
+    background: #188ce8;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .filterBtnSection {
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 50px;
+    }
+  }
+  
+  .portfoloiCollectSectionCardWrap {
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
+  .portfoloiCollectSectionCard {
+    display: flex;
+    flex-direction: column-reverse;
+    cursor: pointer;
+    border: 1px solid #eeeeee;
+    transition-property: box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+  
+  .portfoloiCollectSectionCard:hover > div > div {
+    transform: translateX(0);
+  }
+  
+  .portfoloiCollectSectionCard:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .portfoloiCollectSectionCardHGroup {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 24px;
+  }
+  
+  .portfoloiCollectSectionCardHGroupTitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 200% */
+    letter-spacing: 1.08px;
+  }
+  .portfoloiCollectSectionCardHGroupDesc {
+    color: #757575;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.48px;
+  }
+  .portfoloiCollectSectionCardImgWrap {
+    width: 100%;
+    max-width: 450px;
+    max-height: 294px;
+    position: relative;
+    overflow: hidden;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 370px;
+    }
+  }
+  
+  .portfoloiCollectSectionCardImgWrapTextWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-101%);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+  
+    background: rgba(33, 150, 243, 0.9);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 370px;
+    }
+  }
+  
+  .portfoloiCollectSectionCardImgWrapText {
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.54px;
+  }
+  
