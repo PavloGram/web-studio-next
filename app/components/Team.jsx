@@ -19,7 +19,9 @@ export default function Team() {
               <section>
                 <h5 className="visually-hidden">Фото</h5>
                   <div className={styles.teamSectionCardImgWrap}>
-                  <Image src={el.mobPhoto} alt={el.alt}  />
+                  <Image src={el.mobPhoto2x}  alt={el.alt}  className="md:hidden" />
+                  <Image src={el.tabPhoto2x} alt={el.alt}  className="hidden md:block xl:hidden" />
+                  <Image src={el.descPhoto2x} alt={el.alt}  className="hidden xl:block" />
                 </div>
               </section>
               <section>
